@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBox Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: dark light;
+        --bg: #0b0b0b;
+        --panel: #111111;
+        --text: #f5f5f5;
+        --muted: #b3b3b3;
+        --border: #2a2a2a;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 24px 64px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.24);
+      }
+      h1, h2 {
+        margin-top: 0;
+      }
+      p, li {
+        color: var(--muted);
+      }
+      a {
+        color: #f5f5f5;
+      }
+      .updated {
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 32px;
+      }
+      code {
+        background: #1a1a1a;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 1px 6px;
+        color: #f5f5f5;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h1>DevBox Privacy Policy</h1>
+        <p class="updated">Last updated: July 2026</p>
+
+        <p>DevBox is a local-first browser extension. Most of the tools run entirely on your device in the browser and do not require any server-side processing.</p>
+
+        <h2>Data stored locally</h2>
+        <p>DevBox stores the following locally in your browser using the extension's own storage area, and nowhere else:</p>
+        <ul>
+          <li>Settings and theme preferences</li>
+          <li>Favorite tools and recent tool history</li>
+          <li>Snippets you create</li>
+          <li>Saved API request collections</li>
+        </ul>
+        <p>These items remain on your device. DevBox does not transmit them to any server for these features.</p>
+
+        <h2>External network requests</h2>
+        <p>Some features make requests to external services only because you explicitly choose to use them:</p>
+        <ul>
+          <li>
+            <strong>QR code generator</strong> — sends the text/URL you enter to a third-party QR
+            rendering API so it can generate the image.
+          </li>
+          <li>
+            <strong>API Request Collections tool</strong> — sends requests to whatever URL you
+            enter. Because this tool is meant to work with any API you want to test, DevBox
+            requests broad host permissions in the browser to make those requests possible. DevBox
+            itself does not read, log, or forward the content of those requests or responses
+            anywhere — they go directly from your browser to the URL you specified.
+          </li>
+        </ul>
+        <p>Outside of these two tools, DevBox makes no network requests at all.</p>
+
+        <h2>No analytics or telemetry</h2>
+        <p>DevBox does not collect analytics, tracking, or telemetry data of any kind.</p>
+
+        <h2>Permissions explained</h2>
+        <ul>
+          <li><code>storage</code> — to save your settings, favorites, recents, and snippets locally.</li>
+          <li><code>clipboardWrite</code> — to support the Copy buttons across tools.</li>
+          <li><code>contextMenus</code> — to add right-click actions (e.g. "Format as JSON") on web pages.</li>
+          <li><code>notifications</code> — to confirm when a right-click action has completed.</li>
+          <li><code>offscreen</code> — used internally so clipboard copy actions triggered from the
+            right-click menu work correctly in the browser's background process.</li>
+          <li><code>host permissions (all URLs)</code> — required only so the API Request
+            Collections tool can send requests to any API you choose to test.</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>
+          If you have privacy questions, please open an issue on the project's GitHub repository:
+          <a href="https://github.com/itsJamesGold/Developer-Toolbox/issues">GitHub Issues</a>.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
